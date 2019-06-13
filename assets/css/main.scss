@@ -1,0 +1,40 @@
+---
+
+---
+
+.container {
+  height:100vh;
+}
+
+.property, .form, .row {
+  height:100%;
+}
+
+.form {
+
+  form {
+    margin-top:30%;
+    * {
+      margin-top:3%;
+    }
+  }
+}
+
+.property {
+  background-image: url("/assets/img/house.jpg");
+  background-position: center;
+  background-size:cover;
+  position: relative;
+
+  .property-info {
+    background-color: rgba(grey, .8);
+    * {
+      color:white;
+    }
+    height:35%;
+    width:35%;
+    position: absolute;
+    bottom:0;
+    left:0;
+  }
+}

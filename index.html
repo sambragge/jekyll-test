@@ -1,0 +1,61 @@
+---
+layout: home
+
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    {% include style.html %}
+    {% seo %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <div class="property col sm">
+          <div class="property-info">
+              <h4>55 Clementina St.</h4>
+              <h6>San Francisco, CA 94105</h6>
+              <p>Listed By</p>
+              <p>Brian Sloss</p>
+              <p>brian@disclosures.io</p>
+              <p>(555)-555-5555</p>
+          </div>
+        </div>
+
+        <div class="col sm form">
+
+          <form id="form" action="#" method="post">
+            <h2>Welcome!</h2>
+            <h4>Please register for supporting documents</h4>
+            <select class="form-control" name="client_type">
+              <option value="buyer">I am a buyer</option>
+              <option value="seller">I am a seller</option>
+            </select>
+
+            <input class="form-control"  type="text" name="name" placeholder="Name" />
+            <input class="form-control"  type="text" name="email" placeholder="Email" />
+
+
+
+            <span>Are you working with an agent?</span>
+            <div class="fourm-check">
+              <input class="form-check-input" type="radio" name="workingWithAgent" id="isWorkingWithAgent">
+              <label class="form-check-label" for="isWorkingWithAgent">Yes</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="workingWithAgent" id="isNotWorkingWithAgent">
+              <label class="form-check-label" for="isNotWorkingWithAgent">No</label>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+    {% include scripts.html %}
+  </body>
+</html>
